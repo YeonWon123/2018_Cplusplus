@@ -1,0 +1,25 @@
+opencv
+- histogram 안나옴
+- harris corner 안나옴
+
+
+template
+ - template은 나오지만, template의 상속은 나오지 않음
+
+
+클래스 상속은 나옴
+
+
+파일 입출력은 나옴
+
+
+한문제당 a, b, c 이런식으로 부분문제가 있으며, 많은건 j까지 있음
+총 5문제
+
+
++ c-string과 class string 중 character string이 아닌, string 문제를 내었다!
+즉 char* name 이 아니고, string name에 관련된 문제가 나옴!
+
++ random access는 나오지 않았다 (12-45)
+
++ namespace는 안나온다.

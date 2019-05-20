@@ -1,0 +1,21 @@
+The sum of the first 3
+numbers in infile.txt
+is 15
+The sum of the first 3
+numbers in infile.txt
+is 20
+The sum of the first 3
+numbers in infile.txt
+is 15
+The sum of the first 3
+numbers in infile.txt
+is 3
+The sum of the first 3
+numbers in infile.txt
+is 3
+The sum of the first 3
+numbers in infile.txt
+is 3
+The sum of the first 3
+numbers in infile.txt
+is 3

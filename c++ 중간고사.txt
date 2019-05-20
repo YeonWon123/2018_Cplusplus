@@ -1,0 +1,143 @@
+시험문제 5문제
+
+5개 모두 coding 문제
+1문제는 미리 적어진 code를 보고, 잘못된 것을 고치는 문제 (틀린 개수는 6군데 이상이 될 수도 있다.)
+
+1장 ~ 5장 -> 1번 숙제 할수 있었음
+specific하게 물어본건 없음....
+
+1장 ~ 8장이 전부 섞임
+
+숙제 2개 (array / class -> 중요한거 2개!) 에서 시험에 나옴
+반드시 숙제코딩을 할 수 있어야 한다! 
+
+실습한 내용이 시험에 나온다(너무 당연한건데..)
+실습한 내용을 전부 할 수 있으면 다 할수 있음 + 책에 있는 코드중에서도 나옴
+
+한 문제는 우리가 보지 못한 내용에서 만들었다.
+이는 처음 보는 예제지만, 우리가 배운 내용을 응용해서 풀 수 있다.
+
+* const의 4가지 용례 
+const variable, const parameter, const function, const return
+이걸 지키지 않을 시 1점 감점(틀린것으로 간주)
+const가 필요한지의 여부는 본인이 직접 판단하여 기입할 것(문제에 주어지지 않는다.)
+
+- structure는 시험에 나오지 않는다.
+
+-> 벡터 X, 소수점 자리수 문제 X, 멤버변수로 배열오는거 X`
+
+-> 5장 selection sort X
+
+-> static 변수 O
+
+
+(const 클래스) or (객체) & operator (symbol) (const 클래스이름 & 클래스라면)
+
+클래스 안 객체의 함수를 부르면, 이 함수는 상수함수가 되어야 한다.
+(const는 쓸거면 다 써야 한다는 법칙)
+
+ostream & operator << (ostream & outputstream, const 클래스이름 & 매개변수이름)
+{
+	...
+	outputstream << 매개변수이름 ...
+	...
+	return outputstream;
+}
+
+입력의 경우는 istream으로
+
+bool operator의 overloading도 알아둘것!
+bool operator == (const 클래스이름1 & 매개변수이름1, const 클래스이름2 & 매개변수이름2)
+{
+	return (매개변수이름1.get함수() == 매개변수이름2.get함수());
+}
+
+
+
+-> static 변수 O
+
+static function 이나 static variable은 program loading시에 이미 생성됨
+
+<중요!> static 변수의 초기화는 class 밖에서 이루어져야 한다. (이거는 인라인 함수가 아님!)
+
+static function으로 일반 member function이나 일반 variable을 부를 수는 없다.'
+(즉, 이미 생성된 static variable은 
+나중에 생성되는 일반 member function이나 일반 variable을 부를 수 없다.)
+
+그러나, 일반 member function은 static variable을 부를 수 있다.
+(즉, 나중에 만들어진 일반 member function은, 이미 생성된 static variable을 부를 수 있다.)
+
+( 일반적인 member function이나 variable은 객체가 생성될 때 존재 )
+
+
+
+
+#include <time.h>
+
+,...
+
+srand(time(0));
+int random = rand() % 3 + 1; // 1,2,3
+
+
+
+ - 문제 예시
+
+클래스의 정의를 적으세요 (상식적으로 default constructor는 써야 한다.)
+ex)
+
+class CMoney {
+public:
+	CMoney(); // default constructor
+	void setdollar(int n_dollar); // mutator ( m s )
+	void setcent(int n_cent);
+	int getdollar();	      // accessor
+	int getcent();
+
+private:
+	int dollar;
+	int cent;
+
+};
+
+// mutator
+void CMoney::setcent(int n_cent)
+{
+
+	cent = n_cent;
+
+}
+
+//accessor
+int CMoney::getcent()
+{
+
+	return cent;
+
+} 
+
+
+
+함수의 declaration(선언부)를 적으세요
+ex) void RecallAndPreCision(int nImage, int nMethod, double pRecall[], ... );
+
+
+< 1문제당 10분정도 걸림, 1문제당 코딩은 10줄 ~ 15줄 >
+< 어떤 문제는 6줄까지만 쓰게 제한 걸려 있음, 2줄 넘어가면 - >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

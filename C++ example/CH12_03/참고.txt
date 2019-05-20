@@ -1,0 +1,11 @@
+for (int nNum = 1; nNum < 3; nNum++) // 이러면 nNum++가 되면서 제대로 읽히지 않는다!
+{
+	fileStream.read((char*)&Datafile[nNum], sizeof(Data));
+}
+
+for (int i = 1; i < 3; i++)
+{
+	int nNum = 1;
+	fileStream.read((char*)&Datafile[nNum], sizeof(Data));
+	// nNum++; // 이거는 안해도 된다! 하면 오류날수도 있음!
+}	
